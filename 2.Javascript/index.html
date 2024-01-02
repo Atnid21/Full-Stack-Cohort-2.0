@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .initial{
+            height: 30px;
+            width: 60px;
+            color: aliceblue;
+            background-color: rgb(245, 69, 69);
+        }
+        .modified{
+            height: 60px;
+            width: 80px;
+            color: aliceblue;
+            background-color: rgb(245, 69, 69);
+        }
+       
+    </style>
+</head>
+<body>
+    <button class="initial">Click</button>
+
+
+
+    <script>
+         let button = document.querySelector(".initial");
+         button.addEventListener('click',event =>setTimeout(sizeDouble,2000));
+
+        function sizeDouble(){
+            let button = document.querySelector(".initial");
+            button.classList.add("modified");
+        }
+    </script>
+</body>
+</html>
